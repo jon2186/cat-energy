@@ -1,0 +1,69 @@
+.invitation {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 28px 0 25px;
+}
+
+.invitation__title {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: @grey-800;
+  line-height: 20px;
+  -webkit-box-flex: 0;
+  flex: 0 0 50%;
+  margin: 0;
+  text-transform: uppercase;
+  max-width: 160px;
+}
+
+.invitation__text {
+  -webkit-box-flex: 0;
+  flex: 0 0 50%;
+  margin: 0;
+  line-height: 21px;
+  max-width: 160px;
+  width: 100%;
+  font-family: "Arial", "Tahoma", sans-serif;
+}
+
+@media(min-width: @tablet-width) {
+  .invitation {
+    padding: 60px 0;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  .invitation__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .invitation {
+    position: absolute;
+    left: 40px;
+    top: 0%;
+    max-width: 570px;
+    width: 100%;
+    background: @white;
+    padding: 32px 35px;
+    -webkit-transform: translateY(48%);
+    transform: translateY(48%);
+  }
+
+  .invitation__title {
+    padding: 30px 40px;
+    max-width: 50%;
+  }
+
+  .invitation__text {
+    padding: 30px 40px;
+    max-width: 50%;
+  }
+}

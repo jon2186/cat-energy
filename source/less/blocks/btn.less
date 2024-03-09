@@ -1,0 +1,33 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  background: @green-100;
+  color: @white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn--small {
+  font-size: 14px;
+}
+
+.btn--light {
+  background: @grey-100;
+  color: @grey-600;
+}
+
+@media(min-width: @tablet-width) {
+  .btn--small {
+    font-size: 20px;
+    width: auto;
+    padding: 16px 27px;
+  }
+}
